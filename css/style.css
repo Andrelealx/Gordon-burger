@@ -336,7 +336,7 @@ ul {
   gap: 5px;
   background: none;
   border: none;
-  cursor: none;
+  cursor: pointer;
   padding: 4px;
 }
 
@@ -364,7 +364,7 @@ ul {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  z-index: 999;
+  z-index: 1001;
   background: rgba(10, 10, 10, 0.98);
   display: flex;
   align-items: center;
@@ -372,11 +372,13 @@ ul {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
+  visibility: hidden;
 }
 
 .mobile-menu.open {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .mobile-menu ul {
@@ -411,7 +413,7 @@ ul {
   border: none;
   color: var(--cream);
   font-size: 1.5rem;
-  cursor: none;
+  cursor: pointer;
   transition: color var(--transition);
 }
 
