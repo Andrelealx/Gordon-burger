@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gordon — Hamburgueria artesanal em Guapimirim/RJ. Top 68 do Brasil no Ranking Hambúrguer Perfeito 2025. Burgers autorais, ambiente climatizado e delivery.">
+  <meta property="og:title" content="Gordon — Hamburgueria Artesanal · Guapimirim/RJ">
+  <meta property="og:description" content="Top 68 entre os melhores hambúrgueres do Brasil.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+  <title>Gordon — Hamburgueria Artesanal · Guapimirim/RJ</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#C8943F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Gordon">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+
+  <!-- Open Graph adicional -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="assets/icons/icon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Gordon Burger",
+    "alternateName": "Gordon Hamburgueria Artesanal",
+    "description": "Hamburgueria artesanal Top 68 do Brasil no Ranking McCain Hambúrguer Perfeito 2025. Burgers autorais em Guapimirim/RJ.",
+    "url": "https://gordonburger.com.br",
+    "telephone": "+55-21-97285-8274",
+    "image": "assets/images/burger-gordon-blue.jpg",
+    "servesCuisine": "Hamburgers",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Dedo de Deus, 1273",
+      "addressLocality": "Guapimirim",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.5333,
+      "longitude": -42.9833
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "18:30",
+        "closes": "23:00"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/gordonclassico"
+    ],
+    "hasMap": "https://maps.google.com/?q=Av.+Dedo+de+Deus+1273+Guapimirim+RJ",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "68",
+      "bestRating": "5"
+    },
+    "award": "Top 68 — Ranking McCain Hambúrguer Perfeito 2025"
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a id="whatsapp-float" href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- SPLASH -->
+  <div id="splash">
+    <div class="splash-content">
+      <div class="splash-logo">GORDON</div>
+      <div class="splash-bar"></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">GORDON</a>
+      <ul class="nav-links">
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#location">Localização</a></li>
+        <li>
+          <a href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank" class="nav-cta">
+            Pedir Agora
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">✕</button>
+    <ul>
+      <li><a href="#menu" class="mobile-link">Cardápio</a></li>
+      <li><a href="#about" class="mobile-link">Sobre</a></li>
+      <li><a href="#experience" class="mobile-link">Experiência</a></li>
+      <li><a href="#gallery" class="mobile-link">Galeria</a></li>
+      <li><a href="#location" class="mobile-link">Localização</a></li>
+      <li>
+        <a href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank" class="mobile-link mobile-link--cta">
+          Pedir Agora
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-bg.jpg">
+      <source src="assets/videos/hero-main.mp4" type="video/mp4">
+      <source src="assets/videos/hero-alt1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" id="heroEyebrow">Hamburgueria Artesanal · Guapimirim/RJ</p>
+      <h1 class="hero-title" id="heroTitle">GORDON</h1>
+      <p class="hero-subtitle" id="heroSubtitle">Hamburgueria artesanal · Guapimirim/RJ</p>
+      <a href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank" class="btn-hero" id="heroBtn">
+        <span class="btn-hero-text">PEDIR AGORA</span>
+        <span class="btn-hero-shimmer"></span>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section id="authority" class="authority-section">
+    <div class="section-line section-line--top"></div>
+    <div class="authority-content">
+      <p class="authority-eyebrow" data-aos="fade-up">Reconhecimento Nacional</p>
+      <div class="authority-row" data-aos="fade-up" data-aos-delay="100">
+        <div class="authority-number-wrap">
+          <span class="authority-hash">#</span>
+          <span class="authority-number" data-target="68">0</span>
+        </div>
+        <div class="authority-badge">
+          <div class="badge-ring">
+            <div class="badge-letters">
+              <span style="--i:0">R</span><span style="--i:1">A</span><span style="--i:2">N</span>
+              <span style="--i:3">K</span><span style="--i:4">I</span><span style="--i:5">N</span>
+              <span style="--i:6">G</span><span style="--i:7">&nbsp;</span><span style="--i:8">2</span>
+              <span style="--i:9">0</span><span style="--i:10">2</span><span style="--i:11">5</span>
+            </div>
+            <span class="badge-icon">🏆</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="authority-title" data-aos="fade-up" data-aos-delay="200">
+        ENTRE OS 125 MELHORES<br>HAMBÚRGUERES DO BRASIL
+      </h2>
+      <p class="authority-sub" data-aos="fade-up" data-aos-delay="300">Ranking McCain Hambúrguer Perfeito 2025</p>
+    </div>
+    <div class="section-line section-line--bottom"></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="about-section">
+    <div class="about-grid">
+      <div class="about-image-wrap">
+        <picture><source srcset="assets/images/about-01.webp" type="image/webp"><img src="assets/images/about-01.jpg" alt="Ambiente Gordon Hamburgueria" class="about-image" loading="lazy"></picture>
+        <div class="about-image-border"></div>
+      </div>
+      <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+        <span class="section-label">Quem somos</span>
+        <h2 class="about-title">Nascemos para provar.</h2>
+        <p class="about-text">
+          O Gordon nasceu para provar que hambúrguer artesanal de verdade existe aqui, em Guapimirim.
+          Clássico na essência. Autoral na execução. Cada burger é montado com cuidado, ingredientes
+          selecionados e uma obsessão por sabor.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">#68</span>
+            <span class="stat-label">Brasil</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Artesanal</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">Desde</span>
+            <span class="stat-label">2023</span>
+          </div>
+        </div>
+        <a href="#gallery" class="btn-outline">CONHEÇA NOSSA HISTÓRIA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section id="menu" class="menu-section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Nossos Clássicos</h2>
+      <p class="section-subtitle"><em>Cada burger, uma obra.</em></p>
+    </div>
+    <div class="burgers-grid">
+      <article class="burger-card">
+        <div class="burger-img-wrap">
+          <picture><source srcset="assets/images/burger-the-copy.webp" type="image/webp"><img src="assets/images/burger-the-copy.jpg" alt="The Copy — Burger Gordon" loading="lazy"></picture>
+          <div class="burger-overlay"></div>
+        </div>
+        <div class="burger-info">
+          <h3 class="burger-name">The Copy</h3>
+          <p class="burger-desc">Blend artesanal, cebola caramelizada, bacon, queijo e molho signature da casa.</p>
+          <div class="burger-tags">
+            <span class="tag">Clássico</span>
+            <span class="tag">Bacon</span>
+            <span class="tag">Artesanal</span>
+          </div>
+        </div>
+      </article>
+      <article class="burger-card">
+        <div class="burger-img-wrap">
+          <picture><source srcset="assets/images/burger-creamy-jalapeno.webp" type="image/webp"><img src="assets/images/burger-creamy-jalapeno.jpg" alt="Creamy Jalapeño — Burger Gordon" loading="lazy"></picture>
+          <div class="burger-overlay"></div>
+        </div>
+        <div class="burger-info">
+          <h3 class="burger-name">Creamy Jalapeño</h3>
+          <p class="burger-desc">Blend nobre, cream cheese de jalapeño, cebola caramelizada e bacon crocante.</p>
+          <div class="burger-tags">
+            <span class="tag">Picante</span>
+            <span class="tag">Cremoso</span>
+            <span class="tag">Autoral</span>
+          </div>
+        </div>
+      </article>
+      <article class="burger-card">
+        <div class="burger-img-wrap">
+          <picture><source srcset="assets/images/burger-gordon-blue.webp" type="image/webp"><img src="assets/images/burger-gordon-blue.jpg" alt="Gordon Blue — Burger Gordon" loading="lazy"></picture>
+          <div class="burger-overlay"></div>
+        </div>
+        <div class="burger-info">
+          <h3 class="burger-name">Gordon Blue</h3>
+          <p class="burger-desc">Blend especial com gorgonzola, rúcula selvagem, tomate seco e maionese trufada.</p>
+          <div class="burger-tags">
+            <span class="tag">Gourmet</span>
+            <span class="tag">Trufado</span>
+            <span class="tag">Premium</span>
+          </div>
+        </div>
+      </article>
+      <article class="burger-card">
+        <div class="burger-img-wrap">
+          <picture><source srcset="assets/images/burger-the-down.webp" type="image/webp"><img src="assets/images/burger-the-down.jpg" alt="The Down — Burger Gordon" loading="lazy"></picture>
+          <div class="burger-overlay"></div>
+        </div>
+        <div class="burger-info">
+          <h3 class="burger-name">The Down</h3>
+          <p class="burger-desc">Smash duplo, queijo americano derretido, pickles artesanais e molho signature da casa.</p>
+          <div class="burger-tags">
+            <span class="tag">Smash</span>
+            <span class="tag">Duplo</span>
+            <span class="tag">Clássico</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-cta" data-aos="fade-up">
+      <a href="https://wa.me/5521972858274?text=Olá!%20Quero%20ver%20o%20cardápio%20completo%20do%20Gordon." target="_blank" class="btn-outline">
+        VER CARDÁPIO COMPLETO
+      </a>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experience" class="experience-section">
+    <picture><source srcset="assets/images/experience-bg.webp" type="image/webp"><img src="assets/images/experience-bg.jpg" alt="Ambiente Gordon" class="experience-bg-img" loading="lazy"></picture>
+    <div class="experience-overlay"></div>
+    <div class="experience-content" data-aos="fade-up">
+      <h2 class="experience-title">Mais do que comer.</h2>
+      <p class="experience-sub"><em>É uma experiência.</em></p>
+      <div class="experience-features">
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 14 4 9l5-5"/>
+            <path d="m15 4 5 5-5 5"/>
+            <path d="M4 9h16"/>
+          </svg>
+          <span>Ambiente Climatizado</span>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+          </svg>
+          <span>Burgers Autorais</span>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m5 11 4-7"/>
+            <path d="m19 11-4-7"/>
+            <path d="M2 11h20"/>
+            <path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/>
+            <path d="m9 11 1 9"/>
+            <path d="M4.5 15.5h15"/>
+            <path d="m15 11-1 9"/>
+          </svg>
+          <span>Delivery Disponível</span>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Guapimirim/RJ</span>
+        </div>
+      </div>
+    </div>
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack">
+        <picture><source srcset="assets/images/burger-04.webp" type="image/webp"><img src="assets/images/burger-04.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/burger-05.webp" type="image/webp"><img src="assets/images/burger-05.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/ambient-01.webp" type="image/webp"><img src="assets/images/ambient-01.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-05.webp" type="image/webp"><img src="assets/images/galeria-05.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-06.webp" type="image/webp"><img src="assets/images/galeria-06.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-01.webp" type="image/webp"><img src="assets/images/galeria-01.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-09.webp" type="image/webp"><img src="assets/images/galeria-09.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/ambient-04.webp" type="image/webp"><img src="assets/images/ambient-04.jpg" alt="Gordon" loading="lazy"></picture>
+        <!-- duplicadas para loop seamless -->
+        <picture><source srcset="assets/images/burger-04.webp" type="image/webp"><img src="assets/images/burger-04.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/burger-05.webp" type="image/webp"><img src="assets/images/burger-05.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/ambient-01.webp" type="image/webp"><img src="assets/images/ambient-01.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-05.webp" type="image/webp"><img src="assets/images/galeria-05.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-06.webp" type="image/webp"><img src="assets/images/galeria-06.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-01.webp" type="image/webp"><img src="assets/images/galeria-01.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/galeria-09.webp" type="image/webp"><img src="assets/images/galeria-09.jpg" alt="Gordon" loading="lazy"></picture>
+        <picture><source srcset="assets/images/ambient-04.webp" type="image/webp"><img src="assets/images/ambient-04.jpg" alt="Gordon" loading="lazy"></picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">Galeria</h2>
+      <p class="section-subtitle">Momentos que ficam.</p>
+    </div>
+    <div class="masonry-grid">
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-01.webp" type="image/webp"><img src="assets/images/galeria-01.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-02.webp" type="image/webp"><img src="assets/images/galeria-02.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-03.webp" type="image/webp"><img src="assets/images/galeria-03.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-04.webp" type="image/webp"><img src="assets/images/galeria-04.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-05.webp" type="image/webp"><img src="assets/images/galeria-05.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-06.webp" type="image/webp"><img src="assets/images/galeria-06.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-07.webp" type="image/webp"><img src="assets/images/galeria-07.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-08.webp" type="image/webp"><img src="assets/images/galeria-08.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-09.webp" type="image/webp"><img src="assets/images/galeria-09.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-10.webp" type="image/webp"><img src="assets/images/galeria-10.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-11.webp" type="image/webp"><img src="assets/images/galeria-11.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/galeria-12.webp" type="image/webp"><img src="assets/images/galeria-12.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/about-01.webp" type="image/webp"><img src="assets/images/about-01.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/about-02.webp" type="image/webp"><img src="assets/images/about-02.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/burger-03.webp" type="image/webp"><img src="assets/images/burger-03.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/ambient-01.webp" type="image/webp"><img src="assets/images/ambient-01.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+      <div class="masonry-item"><picture><source srcset="assets/images/ambient-04.webp" type="image/webp"><img src="assets/images/ambient-04.jpg" alt="Gordon" loading="lazy"></picture><div class="masonry-overlay"><svg viewBox="0 0 24 24" fill="var(--gold)" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div></div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="reviews" class="reviews-section">
+    <div class="section-header" data-aos="fade-up">
+      <h2 class="section-title">O que falam de nós</h2>
+      <p class="section-subtitle">Avaliações reais de quem provou.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Melhor hambúrguer que já comi em toda a região. O Gordon Blue é absurdo, gorgonzola derretido perfeito. Lugar top, ambiente ótimo e atendimento impecável."</p>
+        <div class="review-author">
+          <span class="review-name">Lucas M.</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      <div class="review-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"#68 no Brasil e eu entendo o motivo. O Creamy Jalapeño é viciante — picante na medida certa, queijo escorrendo. Vale cada quilômetro até Guapimirim."</p>
+        <div class="review-author">
+          <span class="review-name">Ana Paula S.</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Fui pelo ranking e me surpreendi. The Copy parece simples mas é executado com perfeição. Já voltei 4 vezes esse mês. Ambiente climatizado e equipe muito simpática."</p>
+        <div class="review-author">
+          <span class="review-name">Rafael T.</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY CTA -->
+  <section id="delivery" class="delivery-section">
+    <div class="delivery-content" data-aos="fade-up">
+      <h2 class="delivery-title">Tá com fome?</h2>
+      <p class="delivery-text">Peça agora pelo delivery e receba o melhor hambúrguer de Guapimirim na sua porta.</p>
+      <a href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank" class="btn-delivery">
+        PEDIR NO DELIVERY
+      </a>
+      <a href="https://wa.me/5521972858274?text=Olá!%20Quero%20ver%20o%20cardápio%20completo%20do%20Gordon." target="_blank" class="btn-outline btn-outline--cream">
+        VER CARDÁPIO COMPLETO
+      </a>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="location" class="location-section">
+    <div class="location-grid">
+      <div class="location-map">
+        <iframe
+          src="https://maps.google.com/maps?q=Gordon+Burger+Guapimirim&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Gordon Hamburgueria — Guapimirim/RJ">
+        </iframe>
+      </div>
+      <div class="location-info" data-aos="fade-left" data-aos-duration="900">
+        <h2 class="location-title">Onde nos encontrar</h2>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <p>Av. Dedo de Deus, 1273 — Cantagalo<br><strong>Guapimirim/RJ</strong></p>
+        </div>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+            <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+          </svg>
+          <p>Terça a domingo<br><strong>18h30 às 23h</strong></p>
+        </div>
+        <div class="location-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          <a href="https://instagram.com/gordonclassico" target="_blank" class="location-insta">@gordonclassico</a>
+        </div>
+        <a href="https://maps.google.com/?q=Av.+Dedo+de+Deus+Guapimirim+RJ" target="_blank" class="btn-outline">
+          COMO CHEGAR
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <p class="footer-logo">GORDON</p>
+      <p class="footer-tagline">Artesanal. Clássico. Guapimirim.</p>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#menu">Cardápio</a>
+        <a href="#about">Sobre</a>
+        <a href="https://instagram.com/gordonclassico" target="_blank">Instagram</a>
+        <a href="https://wa.me/5521972858274?text=Olá!%20Vi%20o%20site%20do%20Gordon%20e%20quero%20fazer%20um%20pedido." target="_blank">Delivery</a>
+      </nav>
+      <p class="footer-copy">© 2025 Gordon — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar foto">
+    <button id="lb-close" aria-label="Fechar">✕</button>
+    <button id="lb-prev" aria-label="Anterior">‹</button>
+    <button id="lb-next" aria-label="Próxima">›</button>
+    <div id="lb-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <p id="lb-counter"></p>
+  </div>
+
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

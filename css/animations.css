@@ -1,0 +1,183 @@
+/* ============================================================
+   GORDON — CSS Animations & Keyframes
+   ============================================================ */
+
+/* SHIMMER no botão hero */
+@keyframes shimmer {
+  0%   { left: -100%; }
+  60%  { left: 160%; }
+  100% { left: 160%; }
+}
+
+/* SCROLL INDICATOR — pulso */
+@keyframes pulse-scroll {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+    opacity: 0.4;
+  }
+}
+
+/* BADGE girando */
+@keyframes badge-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* BOTÃO DELIVERY — pulso dourado */
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 148, 63, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(200, 148, 63, 0);
+  }
+}
+
+/* MARQUEE horizontal */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* FADE IN genérico */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* LINHA que cresce */
+@keyframes line-grow {
+  from { width: 0; }
+  to   { width: 80px; }
+}
+
+/* NÚMERO contando (controlado via JS, mas a classe de transição) */
+.counting {
+  transition: none;
+}
+
+/* GLOW dourado em texto */
+.text-glow {
+  text-shadow: 0 0 30px rgba(200, 148, 63, 0.6), 0 0 60px rgba(200, 148, 63, 0.3);
+}
+
+/* ENTRADA de seção label */
+.section-label {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--gold);
+  width: 0;
+  animation: line-grow 0.8s ease 0.3s forwards;
+}
+
+/* HOVER nos links de nav — underline deslizante */
+.nav-links li a {
+  position: relative;
+}
+
+/* REVEAL SLIDE-UP — para uso com JS class add */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO — estado final após GSAP */
+.hero-eyebrow.animated,
+.hero-title.animated,
+.hero-subtitle.animated,
+.btn-hero.animated {
+  opacity: 1;
+}
+
+/* EXPERIENCE features — entrada com fade */
+.feature {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature:nth-child(1) { transition-delay: 0.1s; }
+.feature:nth-child(2) { transition-delay: 0.2s; }
+.feature:nth-child(3) { transition-delay: 0.3s; }
+.feature:nth-child(4) { transition-delay: 0.4s; }
+
+/* MASONRY ITEM hover overlay */
+.masonry-overlay {
+  transition: opacity 0.3s ease;
+}
+
+/* BURGER CARD hover transform — garantir suavidade */
+.burger-card {
+  will-change: transform;
+}
+
+/* SPLASH — animação de saída */
+#splash.hide {
+  animation: splash-exit 0.8s ease forwards;
+}
+
+@keyframes splash-exit {
+  0%   { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.05); pointer-events: none; }
+}
+
+/* NAVBAR — animação de entrada */
+#navbar {
+  animation: nav-enter 0.6s ease 0.3s both;
+}
+
+@keyframes nav-enter {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* AUTHORITY NUMBER — brilho ao terminar de contar */
+.authority-number.done {
+  animation: gold-pulse 0.6s ease;
+}
+
+@keyframes gold-pulse {
+  0%   { text-shadow: 0 0 0px rgba(200,148,63,0); }
+  50%  { text-shadow: 0 0 40px rgba(200,148,63,0.8), 0 0 80px rgba(200,148,63,0.4); }
+  100% { text-shadow: 0 0 0px rgba(200,148,63,0); }
+}
+
+/* MOBILE MENU links — stagger de entrada */
+.mobile-menu.open li {
+  animation: mobile-link-in 0.4s ease both;
+}
+
+.mobile-menu.open li:nth-child(1) { animation-delay: 0.05s; }
+.mobile-menu.open li:nth-child(2) { animation-delay: 0.10s; }
+.mobile-menu.open li:nth-child(3) { animation-delay: 0.15s; }
+.mobile-menu.open li:nth-child(4) { animation-delay: 0.20s; }
+.mobile-menu.open li:nth-child(5) { animation-delay: 0.25s; }
+.mobile-menu.open li:nth-child(6) { animation-delay: 0.30s; }
+
+@keyframes mobile-link-in {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}

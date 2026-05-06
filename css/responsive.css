@@ -1,0 +1,341 @@
+/* ============================================================
+   GORDON — Responsividade
+   Breakpoints: tablet ≤1200px · mobile ≤768px
+   ============================================================ */
+
+/* ============================================================
+   TABLET (≤ 1200px)
+   ============================================================ */
+@media (max-width: 1200px) {
+  .burgers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    gap: 3rem;
+  }
+
+  .authority-number {
+    font-size: clamp(6rem, 15vw, 12rem);
+  }
+
+  .location-grid {
+    grid-template-columns: 55fr 45fr;
+  }
+
+  .experience-features {
+    gap: 2.5rem;
+  }
+
+  .masonry-grid {
+    columns: 2;
+  }
+}
+
+/* ============================================================
+   MOBILE (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* CURSOR: desativar */
+  #cursor,
+  #cursor-follower {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+
+  a, button {
+    cursor: pointer !important;
+  }
+
+  /* NAVBAR */
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #navbar {
+    padding: 1.25rem 1.25rem;
+  }
+
+  /* HERO */
+  .hero-title {
+    font-size: clamp(5rem, 22vw, 9rem);
+  }
+
+  .hero-subtitle {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+  }
+
+  .btn-hero {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  /* AUTHORITY */
+  .authority-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .authority-badge {
+    order: -1;
+  }
+
+  .authority-number {
+    font-size: clamp(6rem, 30vw, 10rem);
+  }
+
+  .authority-hash {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .authority-section {
+    padding: 4rem 1.25rem;
+  }
+
+  /* SOBRE */
+  .about-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-image-wrap {
+    order: -1;
+  }
+
+  .about-image {
+    aspect-ratio: 16/9;
+  }
+
+  .about-stats {
+    gap: 1.25rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  /* CARDÁPIO */
+  .menu-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .burgers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* DEPOIMENTOS */
+  .reviews-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* WHATSAPP FLOAT */
+  #whatsapp-float {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  /* LIGHTBOX MOBILE */
+  #lb-prev { left: 0.5rem; }
+  #lb-next { right: 0.5rem; }
+
+  #lb-prev, #lb-next {
+    font-size: 1.8rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .masonry-item {
+    cursor: pointer;
+  }
+
+  /* EXPERIÊNCIA */
+  .experience-content {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .experience-features {
+    gap: 2rem;
+  }
+
+  .feature {
+    max-width: 100px;
+  }
+
+  .marquee-track img {
+    width: 200px;
+    height: 150px;
+  }
+
+  /* GALERIA */
+  .gallery-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .masonry-grid {
+    columns: 2;
+    column-gap: 0.6rem;
+  }
+
+  .masonry-item {
+    margin-bottom: 0.6rem;
+  }
+
+  /* DELIVERY */
+  .delivery-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .delivery-title {
+    font-size: clamp(2.5rem, 12vw, 4.5rem);
+  }
+
+  .btn-delivery {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  .btn-outline--cream {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  /* LOCALIZAÇÃO */
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location-map {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .location-info {
+    padding: 3rem 1.5rem;
+    border-left: none;
+    border-top: 1px solid rgba(200, 148, 63, 0.15);
+    gap: 1.5rem;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    padding: 3rem 1.25rem;
+  }
+
+  .footer-nav {
+    gap: 1.25rem;
+  }
+
+  /* SOBRE — botão fullwidth */
+  .about-content .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* AUTHORITY TITLE */
+  .authority-title {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+}
+
+/* ============================================================
+   MOBILE PEQUENO (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 1;
+  }
+
+  .experience-features {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .feature {
+    max-width: none;
+  }
+
+  .footer-nav {
+    gap: 1rem;
+  }
+
+  .about-stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+}
+
+/* ============================================================
+   ALTO CONTRASTE / REDUÇÃO DE MOVIMENTO
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track {
+    animation: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .badge-ring {
+    animation: none;
+  }
+
+  .badge-icon {
+    animation: none;
+  }
+
+  .btn-hero-shimmer {
+    display: none;
+  }
+
+  .btn-delivery {
+    animation: none;
+  }
+
+  .scroll-indicator {
+    animation: none;
+  }
+}
